@@ -45,10 +45,7 @@
     html { scroll-behavior: smooth; scroll-padding-top: 84px; }
     @media (min-width: 1024px) { html { scroll-padding-top: 110px; } }
 
-    /* HERO PHOTO: save your banner as images/hero.jpg (landscape 2:1, ideally 2400x1200 px).
-       The top of the photo is darkened so the text stays readable, and the bottom fades into the
-       dark page colour (#0f172a) so it blends into the products section. With no photo, the
-       dotted dark pattern shows instead. */
+    
     .hero-photo {
       background-color: #0f172a;
       background-image:
@@ -88,10 +85,10 @@
     input:checked + .chip-face { background: #f59e0b; border-color: #f59e0b; color: #0f172a; }
     input:focus-visible + .chip-face { outline: 2px solid #0f172a; outline-offset: 2px; }
 
-    /* Quote form intro panel: warm amber glow in the top-left fading into dark slate */
+    /* Quote form intro panel */
     .quote-intro { background: linear-gradient(135deg, #433423 0%, #2d2b27 40%, #1c252b 75%, #131c26 100%); }
 
-    /* Floating WhatsApp button: glowing edge on hover / keyboard focus */
+    /* Floating WhatsApp button */
     .wa-glow { transition: box-shadow .2s ease, transform .2s ease; }
     .wa-glow:hover, .wa-glow:focus-visible {
       transform: translateY(-2px);
@@ -139,7 +136,7 @@
 
   <main id="top">
 
-  <!-- Hero: photo banner that fades into the dark products section below -->
+  <!-- Hero: photo banner -->
   <section class="hero-photo text-white pt-8 pb-12 md:pt-20 lg:pt-14 md:pb-24 lg:pb-16 px-4">
     <div class="max-w-7xl mx-auto text-left md:px-4">
       <h1 class="hero-text">
@@ -168,10 +165,7 @@
     </div>
   </section>
 
-  <!-- Products: each card carries a real photo.
-       PHOTOS: save as images/product-ibeams.jpg, product-hollow.jpg, product-plates.jpg,
-       product-channels.jpg, product-mesh.jpg, product-fabrication.jpg (landscape 4:3, 1200 px wide or more).
-       Until a photo exists, the card shows a "Photo coming soon" box. -->
+  <!-- Products: each card carries a real photo. -->
   <section id="products" class="bg-slate-900 px-4 pb-12 md:pb-20">
     <div class="max-w-7xl mx-auto">
       <div class="mb-6 md:mb-10 border-b border-slate-700 pb-4 md:pb-6">
@@ -263,9 +257,7 @@
     </div>
   </section>
 
-  <!-- Our work: stays hidden until at least one of these photos exists.
-       PHOTOS: save finished jobs and the yard as images/yard-1.jpg, yard-2.jpg, workshop-1.jpg,
-       project-1.jpg, project-2.jpg, project-3.jpg. Any file that is missing is simply left out. -->
+  <!-- Our work. -->
   <section id="work" class="hidden bg-white border-b border-slate-200 py-10 md:py-16 px-4">
     <div class="max-w-7xl mx-auto">
       <div class="mb-6 md:mb-10">
@@ -281,7 +273,7 @@
         <figure><img src="images/project-3.jpg" alt="Completed steel structure project" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2">Finished project</figcaption></figure>
       </div>
 
-      <!-- TESTIMONIALS: uncomment and fill in ONLY with real customer feedback you have permission to use.
+      <!-- TESTIMONIALS:fill in ONLY with real customer feedback I have permission to use.
       <div class="grid md:grid-cols-3 gap-6 mt-12">
         <blockquote class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-sm text-slate-700">
           "Real customer quote here."
@@ -606,11 +598,9 @@
   <script>
     var WA_NUMBER = "260963800004";
 
-    // EMAIL SENDING (Formspree): create a form at formspree.io, copy its address and paste it below,
-    // for example "https://formspree.io/f/abcdwxyz". Until then the email button tells visitors to use WhatsApp.
+    // EMAIL SENDING (Formspree)
     var FORMSPREE_URL = "https://formspree.io/f/YOUR_FORM_ID";
 
-    // "Our work" appears only if at least one photo exists; missing photos are left out
     (function () {
       var sec = document.getElementById('work');
       var link = document.getElementById('nav-work');
