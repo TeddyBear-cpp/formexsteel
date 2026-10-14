@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formex Steel | Steel Supply & Fabrication in Lusaka, Zambia</title>
+  <meta name="description" content="Formex Steel in Lusaka supplies I-beams, hollow sections, steel plates and custom fabrication. Send your sizes on WhatsApp or the quote form and get a quotation.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f59e0b'/%3E%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='34' font-weight='900' text-anchor='middle' fill='%23020617'%3EFS%3C/text%3E%3C/svg%3E">
+  <!-- Switch this back on once the real domain exists (replace YOUR-DOMAIN-HERE):
+  <link rel="canonical" href="https://YOUR-DOMAIN-HERE/"> -->
+
+  <!-- Social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Formex Steel | Steel Supply & Fabrication in Lusaka">
+  <meta property="og:description" content="I-beams, hollow sections, plates and custom fabrication. Request a quote on WhatsApp.">
+  <!-- Once live, use the hero photo for link previews: <meta property="og:image" content="https://YOUR-DOMAIN-HERE/images/hero.jpg"> -->
+
+  <!-- Local SEO: helps Google understand the business. Add "email" and "aggregateRating" only once they are real and verifiable. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Formex Steel",
+    "description": "Structural steel supply and custom metal fabrication in Lusaka, Zambia.",
+    "telephone": "+260963800004",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot 5136, Chandwe Musonda Road",
+      "addressLocality": "Lusaka",
+      "addressCountry": "ZM"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -15.4035997, "longitude": 28.2710776 },
+    "hasMap": "https://maps.app.goo.gl/KEwMqNj8wKmftHUj8",
+    "sameAs": ["https://www.facebook.com/FORMEXSTEELOfficial"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    @media (min-width: 1024px) { html { scroll-padding-top: 110px; } }
+
+    /* HERO PHOTO: save your banner as images/hero.jpg (landscape 2:1, ideally 2400x1200 px).
+       The top of the photo is darkened so the text stays readable, and the bottom fades into the
+       dark page colour (#0f172a) so it blends into the products section. With no photo, the
+       dotted dark pattern shows instead. */
+    .hero-photo {
+      background-color: #0f172a;
+      background-image:
+        linear-gradient(to bottom, rgba(15,23,42,.62) 0%, rgba(15,23,42,.50) 45%, rgba(15,23,42,.86) 82%, #0f172a 100%),
+        url('images/hero.webp'),
+        radial-gradient(#334155 1px, transparent 1px);
+      background-size: auto, cover, 24px 24px;
+      background-position: center, center, 0 0;
+      background-repeat: no-repeat, no-repeat, repeat;
+    }
+    @media (min-width: 768px) {
+      .hero-photo {
+        background-image:
+          linear-gradient(to right, rgba(15,23,42,.88) 0%, rgba(15,23,42,.62) 38%, rgba(15,23,42,.12) 72%, rgba(15,23,42,0) 100%),
+          linear-gradient(to bottom, rgba(15,23,42,.45) 0%, rgba(15,23,42,.35) 45%, rgba(15,23,42,.86) 85%, #0f172a 100%),
+          url('images/hero.webp'),
+          radial-gradient(#334155 1px, transparent 1px);
+        background-size: auto, auto, cover, 24px 24px;
+        background-position: center, center, center, 0 0;
+        background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+      }
+    }
+    .hero-text { text-shadow: 0 2px 14px rgba(0,0,0,.55); }
+
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-chevron { transform: rotate(180deg); }
+    .faq-chevron { transition: transform .2s; }
+
+    /* Choice buttons for the quote form */
+    .chip-face {
+      display: inline-block; border: 1px solid #cbd5e1; background: #fff; color: #334155;
+      border-radius: 9999px; padding: .7rem 1rem; font-size: .875rem; font-weight: 600;
+      cursor: pointer; transition: background .15s, border-color .15s;
+    }
+    .chip-face:hover { border-color: #f59e0b; }
+    input:checked + .chip-face { background: #f59e0b; border-color: #f59e0b; color: #0f172a; }
+    input:focus-visible + .chip-face { outline: 2px solid #0f172a; outline-offset: 2px; }
+
+    /* Quote form intro panel: warm amber glow in the top-left fading into dark slate */
+    .quote-intro { background: linear-gradient(135deg, #433423 0%, #2d2b27 40%, #1c252b 75%, #131c26 100%); }
+
+    /* Floating WhatsApp button: glowing edge on hover / keyboard focus */
+    .wa-glow { transition: box-shadow .2s ease, transform .2s ease; }
+    .wa-glow:hover, .wa-glow:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 3px rgba(52,211,153,.55), 0 0 18px 6px rgba(16,185,129,.55), 0 10px 25px rgba(0,0,0,.35);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Navigation -->
+  <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-xl border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 py-3 lg:py-4 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-3 lg:gap-4 min-w-0">
+        <a href="#top" aria-label="Formex Steel home" class="shrink-0 bg-amber-500 text-slate-950 px-2.5 py-2 lg:px-4 lg:py-3.5 rounded-lg lg:rounded-xl font-black text-xl lg:text-2xl tracking-tighter">FS</a>
+        <div class="min-w-0">
+          <a href="#top" class="block"><p class="text-[15px] sm:text-lg md:text-2xl lg:text-3xl font-black tracking-normal sm:tracking-wide uppercase leading-none whitespace-nowrap">Formex Steel</p></a>
+          <p class="text-[10px] md:text-xs lg:text-sm text-amber-500 tracking-wide font-extrabold uppercase mt-1 hidden sm:block">Steel supply &amp; fabrication</p>
+          <!-- Phones only: live open/closed line (Lusaka time). Tapping it jumps to the map and hours. -->
+          <a href="#contact" id="open-status" class="sm:hidden hidden items-center gap-1.5 mt-1 text-[11px] leading-none font-semibold text-slate-300">
+            <span id="open-dot" class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span><span id="open-text"></span>
+          </a>
+        </div>
+      </div>
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-9 text-base xl:text-xl font-bold text-slate-200">
+        <a href="#products" class="hover:text-amber-400">Products</a>
+        <a href="#why-us" class="hover:text-amber-400">Why us</a>
+        <a href="#work" id="nav-work" class="hidden hover:text-amber-400">Our work</a>
+        <a href="#how-it-works" class="hover:text-amber-400">Process</a>
+        <a href="#quote" class="hover:text-amber-400">Free quotation</a>
+        <a href="#faq" class="hover:text-amber-400">FAQ</a>
+        <a href="#contact" class="hover:text-amber-400">Visit us</a>
+      </nav>
+      <!-- Phones and tablets keep the quick actions; the desktop header is just logo + menu -->
+      <div class="flex items-center gap-2 sm:gap-3 lg:hidden shrink-0">
+        <a href="tel:+260963800004" data-track="call_header_icon" aria-label="Call Formex Steel" class="sm:hidden flex items-center justify-center w-10 h-10 bg-slate-800 border border-slate-700 rounded-lg text-amber-500"><i class="fa-solid fa-phone"></i></a>
+        <a href="tel:+260963800004" data-track="call_header" class="hidden sm:flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-4 py-2.5 rounded-lg transition text-sm">
+          <i class="fa-solid fa-phone text-amber-500"></i> +260 96 3800004
+        </a>
+        <a href="#quote" data-track="quote_header" aria-label="Get a quote" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-3 sm:px-5 py-2.5 rounded-lg transition text-xs min-[400px]:text-sm flex items-center gap-1.5 sm:gap-2 shadow-lg shadow-amber-500/10">
+          <i class="fa-solid fa-file-invoice"></i> <span class="hidden min-[340px]:inline"><span class="hidden min-[400px]:inline">Get a </span>Quote</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+  <!-- Hero: photo banner that fades into the dark products section below -->
+  <section class="hero-photo text-white pt-8 pb-12 md:pt-20 lg:pt-14 md:pb-24 lg:pb-16 px-4">
+    <div class="max-w-7xl mx-auto text-left md:px-4">
+      <h1 class="hero-text">
+        <span class="block text-amber-500 font-extrabold text-xs sm:text-sm uppercase tracking-wide mb-3 md:mb-5">Steel supply &amp; fabrication · Lusaka</span>
+        <span class="block text-6xl sm:text-8xl lg:text-[clamp(7rem,9vw,11rem)] font-black uppercase tracking-tight leading-[.88]">Formex<br>Steel</span>
+      </h1>
+      <p class="hero-text text-2xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mt-4 md:mt-6 mb-4 md:mb-5 max-w-3xl">Your one stop comprehensive steel shop</p>
+      <p class="hero-text text-slate-100 text-base md:text-xl lg:text-2xl max-w-3xl mb-7 md:mb-8 leading-relaxed">
+        Beams, hollow sections, plates and custom fabrication for builders, contractors and homeowners in Lusaka and beyond.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-start gap-4 mb-7 md:mb-10">
+        <a href="https://wa.me/260963800004?text=Hi%20Formex%20Steel%2C%20I%20need%20a%20quote%20for%3A%0AProduct%3A%20%0ASize%3A%20%0AQuantity%3A%20%0ADelivery%20location%3A%20" target="_blank" rel="noopener" data-track="whatsapp_hero"
+           class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-3 shadow-xl transition transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-2xl"></i> Quote on WhatsApp
+        </a>
+        <a href="#quote" data-track="quote_hero" class="bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold py-4 px-8 rounded-xl border border-slate-700 flex items-center justify-center gap-2 transition">
+          <i class="fa-solid fa-pen-to-square text-amber-500"></i> Use the quote form
+        </a>
+      </div>
+      <ul class="flex flex-wrap justify-start gap-2 text-xs md:text-sm text-slate-200">
+        <li class="bg-slate-900/60 border border-slate-600/60 rounded-full px-3 py-1.5"><i class="fa-solid fa-warehouse text-amber-500 mr-1.5"></i>Stock held in Lusaka</li>
+        <li class="bg-slate-900/60 border border-slate-600/60 rounded-full px-3 py-1.5"><i class="fa-solid fa-scissors text-amber-500 mr-1.5"></i>Cut to size</li>
+        <li class="bg-slate-900/60 border border-slate-600/60 rounded-full px-3 py-1.5"><i class="fa-solid fa-fire-flame-simple text-amber-500 mr-1.5"></i>In-house fabrication</li>
+        <li class="bg-slate-900/60 border border-slate-600/60 rounded-full px-3 py-1.5"><i class="fa-solid fa-truck text-amber-500 mr-1.5"></i>Delivery on request</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Products: each card carries a real photo.
+       PHOTOS: save as images/product-ibeams.jpg, product-hollow.jpg, product-plates.jpg,
+       product-channels.jpg, product-mesh.jpg, product-fabrication.jpg (landscape 4:3, 1200 px wide or more).
+       Until a photo exists, the card shows a "Photo coming soon" box. -->
+  <section id="products" class="bg-slate-900 px-4 pb-12 md:pb-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-6 md:mb-10 border-b border-slate-700 pb-4 md:pb-6">
+        <span class="text-amber-500 font-bold text-xs uppercase tracking-widest">What we supply</span>
+        <h2 class="text-2xl md:text-3xl font-black text-white mt-1">Products &amp; services</h2>
+        <p class="text-slate-400 text-sm mt-2">Tap "Get a price" on any item and we'll prefill your quote request.</p>
+      </div>
+
+      <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+
+        <article class="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] bg-slate-800 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs">
+            <i class="fa-solid fa-grip-lines text-2xl text-amber-500/70"></i><span>Photo coming soon</span>
+            <img src="images/product-ibeams.jpg" alt="Universal I-beams and columns in stock at Formex Steel" width="800" height="600" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-5 flex flex-col flex-1">
+            <h3 class="text-sm md:text-lg font-bold text-slate-900 leading-snug">Universal I-Beams &amp; Columns</h3>
+            <p class="text-slate-600 text-xs md:text-sm mt-1 mb-2">Frames, roof supports and heavy columns. Cut to length on request.</p>
+            <a href="#quote" data-product="Universal I-Beams" class="pick mt-auto inline-flex items-center gap-1.5 py-2 text-amber-700 hover:text-amber-800 font-bold text-sm">Get a price <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] bg-slate-800 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs">
+            <i class="fa-solid fa-square-full text-2xl text-amber-500/70"></i><span>Photo coming soon</span>
+            <img src="images/product-hollow.webp" alt="Hollow sections (RHS and SHS) in stock at Formex Steel" width="800" height="600" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-5 flex flex-col flex-1">
+            <h3 class="text-sm md:text-lg font-bold text-slate-900 leading-snug">Hollow Sections (RHS / SHS)</h3>
+            <p class="text-slate-600 text-xs md:text-sm mt-1 mb-2">Gates, fencing, trusses and frames. Many sizes and wall thicknesses.</p>
+            <a href="#quote" data-product="Hollow Sections (RHS/SHS)" class="pick mt-auto inline-flex items-center gap-1.5 py-2 text-amber-700 hover:text-amber-800 font-bold text-sm">Get a price <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] bg-slate-800 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs">
+            <i class="fa-solid fa-layer-group text-2xl text-amber-500/70"></i><span>Photo coming soon</span>
+            <img src="images/product-plates.jpg" alt="Mild steel and checker plates in stock at Formex Steel" width="800" height="600" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-5 flex flex-col flex-1">
+            <h3 class="text-sm md:text-lg font-bold text-slate-900 leading-snug">Mild Steel &amp; Checker Plates</h3>
+            <p class="text-slate-600 text-xs md:text-sm mt-1 mb-2">Base plates, floors, trailer beds and anti-slip checker plate.</p>
+            <a href="#quote" data-product="Mild Steel / Checker Plates" class="pick mt-auto inline-flex items-center gap-1.5 py-2 text-amber-700 hover:text-amber-800 font-bold text-sm">Get a price <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] bg-slate-800 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs">
+            <i class="fa-solid fa-shapes text-2xl text-amber-500/70"></i><span>Photo coming soon</span>
+            <img src="images/product-channels.jpg" alt="Steel channels and angle iron in stock at Formex Steel" width="800" height="600" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-5 flex flex-col flex-1">
+            <h3 class="text-sm md:text-lg font-bold text-slate-900 leading-snug">Channels &amp; Angle Iron</h3>
+            <p class="text-slate-600 text-xs md:text-sm mt-1 mb-2">Bracing, frames and supports. Standard lengths or cut to size.</p>
+            <a href="#quote" data-product="Channels / Angle Iron" class="pick mt-auto inline-flex items-center gap-1.5 py-2 text-amber-700 hover:text-amber-800 font-bold text-sm">Get a price <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] bg-slate-800 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs">
+            <i class="fa-solid fa-border-all text-2xl text-amber-500/70"></i><span>Photo coming soon</span>
+            <img src="images/product-mesh.jpg" alt="Expanded mesh and galvanized sheet in stock at Formex Steel" width="800" height="600" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-5 flex flex-col flex-1">
+            <h3 class="text-sm md:text-lg font-bold text-slate-900 leading-snug">Expanded Mesh &amp; Galvanized Sheet</h3>
+            <p class="text-slate-600 text-xs md:text-sm mt-1 mb-2">Guards, walkways and enclosures. Ask for available gauges.</p>
+            <a href="#quote" data-product="Expanded Mesh / Galvanized Sheet" class="pick mt-auto inline-flex items-center gap-1.5 py-2 text-amber-700 hover:text-amber-800 font-bold text-sm">Get a price <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col border-2 border-amber-400">
+          <div class="relative aspect-[4/3] bg-slate-800 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs">
+            <i class="fa-solid fa-gear text-2xl text-amber-500/70"></i><span>Photo coming soon</span>
+            <img src="images/product-fabrication.jpg" alt="Custom steel fabrication at Formex Steel" width="800" height="600" loading="lazy" onerror="this.style.display='none'" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-5 flex flex-col flex-1">
+            <h3 class="text-sm md:text-lg font-bold text-slate-900 leading-snug">Custom Fabrication</h3>
+            <p class="text-slate-600 text-xs md:text-sm mt-1 mb-2">Cutting, bending and welding to your drawings. Send sketches on WhatsApp.</p>
+            <a href="#quote" data-product="Custom Fabrication" class="pick mt-auto inline-flex items-center gap-1.5 py-2 text-amber-700 hover:text-amber-800 font-bold text-sm">Discuss your job <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center mt-6 md:mt-10">
+        <button type="button" id="toggle-products" aria-expanded="false" aria-controls="product-grid"
+                class="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-amber-500 text-white font-bold px-7 py-3.5 rounded-xl transition">See more products</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our work: stays hidden until at least one of these photos exists.
+       PHOTOS: save finished jobs and the yard as images/yard-1.jpg, yard-2.jpg, workshop-1.jpg,
+       project-1.jpg, project-2.jpg, project-3.jpg. Any file that is missing is simply left out. -->
+  <section id="work" class="hidden bg-white border-b border-slate-200 py-10 md:py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-6 md:mb-10">
+        <span class="text-amber-700 font-bold text-xs uppercase tracking-widest">See it for yourself</span>
+        <h2 class="text-2xl md:text-3xl font-black text-slate-900 mt-1">Our yard, workshop &amp; recent work</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4" id="gallery">
+        <figure><img src="images/yard-1.jpg" alt="Steel stockyard at Formex Steel, Lusaka" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2">Stockyard</figcaption></figure>
+        <figure><img src="images/yard-2.jpg" alt="Stacked structural steel beams and sections" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2"></figcaption></figure>
+        <figure><img src="images/workshop-1.jpg" alt="Welding and fabrication in the Formex Steel workshop" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2">Workshop</figcaption></figure>
+        <figure><img src="images/project-1.jpg" alt="Completed steel fabrication project" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2">Finished project</figcaption></figure>
+        <figure><img src="images/project-2.jpg" alt="Completed steel gate or truss project" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2">Finished project</figcaption></figure>
+        <figure><img src="images/project-3.jpg" alt="Completed steel structure project" loading="lazy" class="w-full h-36 md:h-56 object-cover rounded-xl"><figcaption class="text-xs text-slate-500 mt-2">Finished project</figcaption></figure>
+      </div>
+
+      <!-- TESTIMONIALS: uncomment and fill in ONLY with real customer feedback you have permission to use.
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <blockquote class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-sm text-slate-700">
+          "Real customer quote here."
+          <footer class="mt-3 text-xs font-bold text-slate-900">Name, Company</footer>
+        </blockquote>
+      </div>
+      -->
+
+      <div class="mt-8 text-center">
+        <a href="https://maps.app.goo.gl/KEwMqNj8wKmftHUj8" target="_blank" rel="noopener" data-track="google_reviews" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-xl text-sm transition">
+          <i class="fa-brands fa-google text-amber-500"></i> See our Google reviews &amp; photos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us. Keep only the points the client confirms. Add things like years in business or certificates ONLY with proof. -->
+  <section id="why-us" class="bg-slate-100 py-10 md:py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-6 md:mb-10">
+        <span class="text-amber-700 font-bold text-xs uppercase tracking-widest">Why us</span>
+        <h2 class="text-2xl md:text-3xl font-black text-slate-900 mt-1">Why choose Formex Steel</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-5">
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+          <div class="mx-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Stock and fabrication, one yard</h3>
+          <p class="text-xs md:text-sm text-slate-600">Buy steel, or have it cut, bent and welded into your gate, truss or frame.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+          <div class="mx-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center mb-3"><i class="fa-solid fa-ruler-horizontal"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Cut to your sizes</h3>
+          <p class="text-xs md:text-sm text-slate-600">Tell us the lengths you need and we cut to size.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+          <div class="mx-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center mb-3"><i class="fa-solid fa-message"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Simple quotes</h3>
+          <p class="text-xs md:text-sm text-slate-600">Send your list on WhatsApp or the form. We reply with price and availability.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+          <div class="mx-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center mb-3"><i class="fa-solid fa-truck"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Delivery on request</h3>
+          <p class="text-xs md:text-sm text-slate-600">We can arrange delivery to your site. Tell us where.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm col-span-2 md:col-span-1">
+          <div class="mx-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center mb-3"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Come and see the stock</h3>
+          <p class="text-xs md:text-sm text-slate-600">Visit our Lusaka yard, open Monday to Saturday.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="py-10 md:py-16 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-6 md:mb-10">
+      <span class="text-amber-700 font-bold text-xs uppercase tracking-widest">Simple process</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-900 mt-1">From message to material</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+        <div class="mx-auto w-9 h-9 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center mb-3">1</div>
+        <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Send your list</h3>
+        <p class="text-xs md:text-sm text-slate-600">Product, size, quantity and where it's going. A photo or drawing helps.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+        <div class="mx-auto w-9 h-9 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center mb-3">2</div>
+        <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Get your quote</h3>
+        <p class="text-xs md:text-sm text-slate-600">We confirm stock and price and reply on WhatsApp or by phone.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+        <div class="mx-auto w-9 h-9 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center mb-3">3</div>
+        <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Confirm &amp; pay</h3>
+        <p class="text-xs md:text-sm text-slate-600">Agree the quote and arrange payment with our team.</p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 md:p-6 text-center shadow-sm">
+        <div class="mx-auto w-9 h-9 md:w-12 md:h-12 rounded-full bg-amber-500 text-slate-950 font-black flex items-center justify-center mb-3">4</div>
+        <h3 class="font-bold text-slate-900 text-sm md:text-base mb-1">Collect or deliver</h3>
+        <p class="text-xs md:text-sm text-slate-600">Collect from our yard or ask about delivery to your site.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common sizes: collapsed so it doesn't lengthen the page. No live stock here, only a price request. 
+  <section class="py-8 md:py-12 px-4 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      <details id="specifications" class="bg-slate-900 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-3 px-5 py-4 text-white font-bold">
+          <span><i class="fa-solid fa-ruler-combined text-amber-500 mr-2"></i>Common sizes</span>
+          <span class="flex items-center gap-3 text-xs text-slate-400 font-normal">Tap to open <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></span>
+        </summary>
+        <div class="px-5 pb-5">
+          <p class="text-slate-400 text-sm mb-4">Sizes vary. Message us to confirm what's in the yard today.</p>
+          <div class="overflow-x-auto bg-slate-950 rounded-xl border border-slate-800">
+            <table class="w-full text-left text-sm text-slate-300 min-w-[640px]">
+              <thead class="bg-slate-800/80 text-amber-400 uppercase text-[11px] tracking-wider border-b border-slate-700">
+                <tr>
+                  <th class="py-4 px-6">Product</th>
+                  <th class="py-4 px-6">Sizes</th>
+                  <th class="py-4 px-6">Typical use</th>
+                  <th class="py-4 px-6 text-right">Price</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800">
+                <tr class="hover:bg-slate-900/50">
+                  <td class="py-4 px-6 font-bold text-white">Universal I-Beams</td>
+                  <td class="py-4 px-6">100×55 mm up to 305×165 mm (6 m / 12 m lengths)</td>
+                  <td class="py-4 px-6 text-slate-400">Columns, building frames, roof supports</td>
+                  <td class="py-4 px-6 text-right"><a href="https://wa.me/260963800004?text=Hi%20Formex%20Steel%2C%20please%20send%20me%20a%20price%20for%20Universal%20I-Beams.%20Size%3A%20" target="_blank" rel="noopener" data-track="whatsapp_spec_beams" class="text-amber-500 hover:underline text-xs font-bold whitespace-nowrap">Ask for price →</a></td>
+                </tr>
+                <tr class="hover:bg-slate-900/50">
+                  <td class="py-4 px-6 font-bold text-white">Hollow Sections (RHS/SHS)</td>
+                  <td class="py-4 px-6">20×20 mm up to 200×200 mm (2–6 mm wall)</td>
+                  <td class="py-4 px-6 text-slate-400">Gates, fencing, light framing</td>
+                  <td class="py-4 px-6 text-right"><a href="https://wa.me/260963800004?text=Hi%20Formex%20Steel%2C%20please%20send%20me%20a%20price%20for%20Hollow%20Sections.%20Size%3A%20" target="_blank" rel="noopener" data-track="whatsapp_spec_hollow" class="text-amber-500 hover:underline text-xs font-bold whitespace-nowrap">Ask for price →</a></td>
+                </tr>
+                <tr class="hover:bg-slate-900/50">
+                  <td class="py-4 px-6 font-bold text-white">Mild Steel Plates</td>
+                  <td class="py-4 px-6">2500 × 1200 mm sheets (2–20 mm thick)</td>
+                  <td class="py-4 px-6 text-slate-400">Base plates, machinery beds, trailer floors</td>
+                  <td class="py-4 px-6 text-right"><a href="https://wa.me/260963800004?text=Hi%20Formex%20Steel%2C%20please%20send%20me%20a%20price%20for%20Mild%20Steel%20Plates.%20Thickness%3A%20" target="_blank" rel="noopener" data-track="whatsapp_spec_plates" class="text-amber-500 hover:underline text-xs font-bold whitespace-nowrap">Ask for price →</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+-->
+
+  <!-- Quote form -->
+  <section id="quote" class="py-10 md:py-16 px-4 bg-slate-100">
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
+      <div class="quote-intro text-white p-6 md:p-8">
+        <span class="text-amber-500 font-bold text-xs uppercase tracking-widest">Free quotation</span>
+        <h2 class="text-2xl md:text-3xl font-black mt-1">Tell us what you need</h2>
+        <p class="text-slate-400 text-sm mt-2">Fill this in and tap send. It opens WhatsApp with your details already typed, ready for us.</p>
+      </div>
+      <form id="quote-form" class="p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 gap-4" novalidate>
+        <div class="sm:col-span-1">
+          <label for="f-name" class="block text-xs font-bold text-slate-700 mb-1">Your name *</label>
+          <input id="f-name" name="name" required autocomplete="name" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+        <div class="sm:col-span-1">
+          <label for="f-phone" class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp *</label>
+          <input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+260 …" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+        <div class="sm:col-span-2">
+          <label for="f-email" class="block text-xs font-bold text-slate-700 mb-1">Email <span class="font-normal text-slate-500">(optional)</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden">
+        <fieldset class="sm:col-span-2">
+          <legend class="block text-xs font-bold text-slate-700 mb-2">What do you need? * <span class="font-normal text-slate-500">(select all that apply)</span></legend>
+          <div class="flex flex-wrap gap-2">
+            <label><input type="checkbox" name="products" value="Universal I-Beams" class="sr-only"><span class="chip-face">Universal I-Beams</span></label>
+            <label><input type="checkbox" name="products" value="Hollow Sections (RHS/SHS)" class="sr-only"><span class="chip-face">Hollow Sections (RHS/SHS)</span></label>
+            <label><input type="checkbox" name="products" value="Mild Steel / Checker Plates" class="sr-only"><span class="chip-face">Mild Steel / Checker Plates</span></label>
+            <label><input type="checkbox" name="products" value="Channels / Angle Iron" class="sr-only"><span class="chip-face">Channels / Angle Iron</span></label>
+            <label><input type="checkbox" name="products" value="Expanded Mesh / Galvanized Sheet" class="sr-only"><span class="chip-face">Expanded Mesh / Galvanized Sheet</span></label>
+            <label><input type="checkbox" name="products" value="Custom Fabrication" class="sr-only"><span class="chip-face">Custom Fabrication</span></label>
+            <label><input type="checkbox" name="products" value="Other" class="sr-only"><span class="chip-face">Other</span></label>
+          </div>
+          <div id="product-other-wrap" class="hidden mt-3">
+            <label for="f-product-other" class="block text-xs font-bold text-slate-700 mb-1">Which other product or service?</label>
+            <input id="f-product-other" name="productOther" placeholder="e.g. flat bar, round bar, pipes" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+          </div>
+        </fieldset>
+        <div class="sm:col-span-2">
+          <label for="f-sizes" class="block text-xs font-bold text-slate-700 mb-1">Sizes and quantities <span class="font-normal text-slate-500">(optional)</span></label>
+          <textarea id="f-sizes" name="sizes" rows="2" placeholder="e.g. 20 lengths of 50×50×3 mm hollow section; 3 plates 2500×1200×10 mm" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+        </div>
+
+        <fieldset class="sm:col-span-2">
+          <legend class="block text-xs font-bold text-slate-700 mb-2">Delivery or collection? <span class="font-normal text-slate-500">(optional)</span></legend>
+          <div class="flex flex-wrap gap-2">
+            <label><input type="radio" name="delivery" value="I'll collect from the yard" class="sr-only"><span class="chip-face">I'll collect</span></label>
+            <label><input type="radio" name="delivery" value="Deliver to my site" class="sr-only"><span class="chip-face">Deliver to my site</span></label>
+            <label><input type="radio" name="delivery" value="Not sure yet" class="sr-only"><span class="chip-face">Not sure yet</span></label>
+          </div>
+          <button type="button" data-clear="delivery" class="hidden mt-1 px-1 py-2 text-xs text-slate-500 underline hover:text-slate-700">Clear</button>
+        </fieldset>
+
+        <fieldset class="sm:col-span-2">
+          <legend class="block text-xs font-bold text-slate-700 mb-2">When do you need it? <span class="font-normal text-slate-500">(optional)</span></legend>
+          <div class="flex flex-wrap gap-2">
+            <label><input type="radio" name="when" value="As soon as possible" class="sr-only"><span class="chip-face">As soon as possible</span></label>
+            <label><input type="radio" name="when" value="This week" class="sr-only"><span class="chip-face">This week</span></label>
+            <label><input type="radio" name="when" value="This month" class="sr-only"><span class="chip-face">This month</span></label>
+            <label><input type="radio" name="when" value="Just getting prices" class="sr-only"><span class="chip-face">Just getting prices</span></label>
+            <label><input type="radio" name="when" value="Other date" class="sr-only"><span class="chip-face">Other date</span></label>
+          </div>
+          <button type="button" data-clear="when" class="hidden mt-1 px-1 py-2 text-xs text-slate-500 underline hover:text-slate-700">Clear</button>
+          <div id="when-other-wrap" class="hidden mt-3">
+            <label for="f-when-other" class="block text-xs font-bold text-slate-700 mb-1">Which date?</label>
+            <input id="f-when-other" name="whenOther" placeholder="e.g. 20 November" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+          </div>
+        </fieldset>
+
+        <div class="sm:col-span-2">
+          <label for="f-notes" class="block text-xs font-bold text-slate-700 mb-1">Location &amp; notes <span class="font-normal text-slate-500">(optional)</span></label>
+          <textarea id="f-notes" name="notes" rows="3" placeholder="Delivery area, drawings you'll send, anything else…" class="w-full border border-slate-300 rounded-lg px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+        </div>
+        <p id="form-error" role="alert" class="sm:col-span-2 text-sm text-red-600 hidden">Please add your name, phone number and at least one product.</p>
+        <div class="sm:col-span-2">
+          <p class="text-xs text-slate-500 mb-3">* Required</p>
+          <button type="submit" data-track="quote_form_submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-3 text-base transition">
+            <i class="fa-brands fa-whatsapp text-2xl"></i> Send my request on WhatsApp
+          </button>
+          <button type="button" id="email-send" data-track="quote_form_email" class="w-full mt-3 bg-white hover:bg-slate-50 text-slate-800 font-bold py-3.5 px-6 rounded-xl border-2 border-slate-300 flex items-center justify-center gap-3 text-base transition disabled:opacity-60">
+            <i class="fa-solid fa-envelope text-xl text-amber-600"></i> <span id="email-send-label">Send by email</span>
+          </button>
+          <p id="form-status" role="status" aria-live="polite" class="hidden"></p>
+          <p class="text-xs text-slate-500 text-center mt-3">We only use your details to reply to your request.</p>
+          <p class="text-xs text-slate-500 text-center mt-1">Prefer to talk? Call <a href="tel:+260963800004" data-track="call_form" class="font-bold text-slate-700 underline">+260 96 3800004</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-10 md:py-16 px-4 max-w-3xl mx-auto">
+    <div class="text-center mb-6 md:mb-10">
+      <span class="text-amber-700 font-bold text-xs uppercase tracking-widest">Good to know</span>
+      <h2 class="text-2xl md:text-3xl font-black text-slate-900 mt-1">Frequently asked questions</h2>
+    </div>
+    <div class="space-y-3">
+      <details class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+        <summary class="flex justify-between items-center font-bold text-slate-900 text-sm md:text-base">How do I get a quote? <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></summary>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Use the quote form, message us on WhatsApp or call. Tell us the product, size, quantity and where it's needed, and we'll come back with stock and price.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+        <summary class="flex justify-between items-center font-bold text-slate-900 text-sm md:text-base">Do you deliver, and how much does it cost? <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></summary>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Delivery can be arranged on request. Tell us your site location when you ask for a quote and we'll confirm availability and the delivery cost together with your price.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+        <summary class="flex justify-between items-center font-bold text-slate-900 text-sm md:text-base">Can you cut steel to a specific length? <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></summary>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Yes, cut-to-size is available. Include the lengths you need in your request so we can price it correctly.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+        <summary class="flex justify-between items-center font-bold text-slate-900 text-sm md:text-base">Can you fabricate from my drawings? <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></summary>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Yes. Send drawings, sketches or clear photos with dimensions on WhatsApp and we'll review the job and quote it.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+        <summary class="flex justify-between items-center font-bold text-slate-900 text-sm md:text-base">How do I pay? <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></summary>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Payment arrangements are confirmed with your quote. Ask us about accepted payment methods and terms for larger orders.</p>
+      </details>
+      <details class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+        <summary class="flex justify-between items-center font-bold text-slate-900 text-sm md:text-base">Where are you and when are you open? <i class="fa-solid fa-chevron-down faq-chevron text-amber-500"></i></summary>
+        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Plot 5136, Chandwe Musonda Road, Lusaka. Monday to Friday 08:00–17:00 and Saturday 08:00–14:00. Closed Sunday.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-4 pb-16 md:pb-20 max-w-7xl mx-auto">
+    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12">
+      <div class="lg:col-span-5 p-8 lg:p-12 bg-slate-900 text-white flex flex-col justify-between">
+        <div>
+          <span class="text-amber-500 font-bold text-xs uppercase tracking-widest">Visit us</span>
+          <h2 class="text-2xl sm:text-3xl font-black mt-1 mb-6">Contact &amp; location</h2>
+          <div class="space-y-6 text-sm text-slate-300">
+            <div class="flex items-start gap-4">
+              <div class="bg-slate-800 p-3 rounded-lg text-amber-500"><i class="fa-solid fa-location-dot text-lg"></i></div>
+              <div><strong class="block text-white">Address</strong><span>Plot 5136, Chandwe Musonda Road, Lusaka, Zambia</span></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-slate-800 p-3 rounded-lg text-amber-500"><i class="fa-solid fa-phone text-lg"></i></div>
+              <div><strong class="block text-white">Sales &amp; quotations</strong><a href="tel:+260963800004" data-track="call_contact" class="hover:text-amber-400">+260 96 3800004</a></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-slate-800 p-3 rounded-lg text-amber-500"><i class="fa-solid fa-clock text-lg"></i></div>
+              <div><strong class="block text-white">Trading hours</strong><span>Mon–Fri 08:00–17:00<br>Sat 08:00–14:00 · Sun closed</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-8 mt-8 border-t border-slate-800 grid gap-3">
+          <a href="https://wa.me/260963800004" target="_blank" rel="noopener" data-track="whatsapp_contact" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 text-sm"><i class="fa-brands fa-whatsapp text-xl"></i> Message on WhatsApp</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-15.4035997,28.2710776" target="_blank" rel="noopener" data-track="directions" class="w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 text-sm"><i class="fa-solid fa-route text-amber-500"></i> Get directions</a>
+          <a href="https://maps.app.goo.gl/KEwMqNj8wKmftHUj8" target="_blank" rel="noopener" data-track="google_reviews_contact" class="w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 text-sm"><i class="fa-brands fa-google text-amber-500"></i> Google reviews &amp; photos</a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 bg-slate-200 min-h-[350px] relative">
+        <iframe title="Formex Steel location map" class="w-full h-full border-0 absolute inset-0"
+          src="https://maps.google.com/maps?q=-15.4035997,28.2710776&z=16&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900 text-xs">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 Formex Steel. All rights reserved.</p>
+      <div class="flex gap-6 text-slate-400">
+        <a href="#products" class="hover:text-amber-500">Products</a>
+        <a href="#faq" class="hover:text-amber-500">FAQ</a>
+        <a href="#contact" class="hover:text-amber-500">Location</a>
+        <a href="https://www.facebook.com/FORMEXSTEELOfficial" target="_blank" rel="noopener" data-track="facebook_footer" class="hover:text-amber-500"><i class="fa-brands fa-facebook mr-1"></i>Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Desktop floating WhatsApp button -->
+  <a href="https://wa.me/260963800004?text=Hi%20Formex%20Steel%2C%20I%20need%20a%20quote." target="_blank" rel="noopener" data-track="whatsapp_floating" aria-label="Chat on WhatsApp"
+     class="wa-glow hidden md:flex fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-2xl items-center gap-2 pl-4 pr-5 py-3 font-bold text-sm">
+    <i class="fa-brands fa-whatsapp text-2xl"></i> Chat with us
+  </a>
+
+  <!-- Mobile floating WhatsApp button -->
+  <a href="https://wa.me/260963800004?text=Hi%20Formex%20Steel%2C%20I%20need%20a%20quote." target="_blank" rel="noopener" data-track="whatsapp_float" aria-label="Chat on WhatsApp"
+     class="wa-glow md:hidden fixed bottom-4 right-4 z-50 w-14 h-14 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-2xl flex items-center justify-center">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- Optional analytics: paste your Google Analytics (GA4) snippet here, e.g.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  -->
+
+  <script>
+    var WA_NUMBER = "260963800004";
+
+    // EMAIL SENDING (Formspree): create a form at formspree.io, copy its address and paste it below,
+    // for example "https://formspree.io/f/abcdwxyz". Until then the email button tells visitors to use WhatsApp.
+    var FORMSPREE_URL = "https://formspree.io/f/YOUR_FORM_ID";
+
+    // "Our work" appears only if at least one photo exists; missing photos are left out
+    (function () {
+      var sec = document.getElementById('work');
+      var link = document.getElementById('nav-work');
+      if (!sec) return;
+      window.addEventListener('load', function () {
+        document.querySelectorAll('#gallery figure').forEach(function (fig) {
+          var img = fig.querySelector('img');
+          var probe = new Image();
+          probe.onload = function () {
+            sec.classList.remove('hidden');
+            if (link) link.classList.remove('hidden');
+          };
+          probe.onerror = function () { fig.remove(); };
+          probe.src = img.getAttribute('src');
+        });
+      });
+    })();
+
+    // Products: show the first few; "See more products" / "Show less" toggles the rest
+    (function () {
+      var grid = document.getElementById('product-grid');
+      var btn = document.getElementById('toggle-products');
+      if (!grid || !btn) return;
+      var cards = [].slice.call(grid.children);
+      var open = false;
+      var wide = window.matchMedia('(min-width: 768px)');
+      function apply() {
+        var show = wide.matches ? 3 : 4; // 3 across on desktop, 2x2 on phones
+        cards.forEach(function (c, i) { c.classList.toggle('hidden', !open && i >= show); });
+        btn.textContent = open ? 'Show less' : 'See more products';
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      btn.addEventListener('click', function () {
+        open = !open;
+        apply();
+        if (!open) document.getElementById('products').scrollIntoView();
+      });
+      if (wide.addEventListener) wide.addEventListener('change', apply); else wide.addListener(apply);
+      apply();
+    })();
+
+    // Product buttons: pick several; "Other" reveals a text box
+    var productOtherWrap = document.getElementById('product-other-wrap');
+    var productOtherInput = document.getElementById('f-product-other');
+    function syncProductOther() {
+      var box = document.querySelector('input[name="products"][value="Other"]');
+      var show = !!box && box.checked;
+      productOtherWrap.classList.toggle('hidden', !show);
+      if (!show) productOtherInput.value = '';
+    }
+    document.querySelectorAll('input[name="products"]').forEach(function (cb) {
+      cb.addEventListener('change', function () {
+        syncProductOther();
+        if (cb.value === 'Other' && cb.checked) productOtherInput.focus();
+      });
+    });
+
+    // "Get a price" links tick that product in the form
+    document.querySelectorAll('a.pick').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var want = a.getAttribute('data-product');
+        document.querySelectorAll('input[name="products"]').forEach(function (cb) {
+          if (cb.value === want) cb.checked = true;
+        });
+      });
+    });
+
+    // "Other date" reveals a short text box
+    var otherWrap = document.getElementById('when-other-wrap');
+    var otherInput = document.getElementById('f-when-other');
+    document.querySelectorAll('input[name="when"]').forEach(function (r) {
+      r.addEventListener('change', function () {
+        var sel = document.querySelector('input[name="when"]:checked');
+        var show = !!sel && sel.value === 'Other date';
+        otherWrap.classList.toggle('hidden', !show);
+        if (show) otherInput.focus();
+      });
+    });
+
+    // "Clear" links: show once a choice is made; untick the group again
+    ['delivery', 'when'].forEach(function (name) {
+      var btn = document.querySelector('[data-clear="' + name + '"]');
+      var radios = document.querySelectorAll('input[name="' + name + '"]');
+      function refresh() {
+        btn.classList.toggle('hidden', !document.querySelector('input[name="' + name + '"]:checked'));
+      }
+      radios.forEach(function (r) { r.addEventListener('change', refresh); });
+      btn.addEventListener('click', function () {
+        radios.forEach(function (r) { r.checked = false; });
+        if (name === 'when') { otherWrap.classList.add('hidden'); otherInput.value = ''; }
+        refresh();
+      });
+    });
+
+    // Links to the collapsed sizes table open it
+    function openSpecs() { var d = document.getElementById('specifications'); if (d) d.open = true; }
+    document.querySelectorAll('a[href="#specifications"]').forEach(function (a) { a.addEventListener('click', openSpecs); });
+    if (location.hash === '#specifications') openSpecs();
+
+    // Quote form: gather and check the answers (shared by the WhatsApp and email buttons)
+    var quoteForm = document.getElementById('quote-form');
+    function collect() {
+      var f = quoteForm;
+      var v = function (n) { return (f.elements[n].value || '').trim(); };
+      var err = document.getElementById('form-error');
+      var chosen = [].slice.call(f.querySelectorAll('input[name="products"]:checked')).map(function (cb) {
+        return cb.value === 'Other' ? 'Other: ' + (v('productOther') || 'to confirm') : cb.value;
+      });
+      var email = v('email');
+      if (!v('name') || !v('phone') || chosen.length === 0) {
+        err.textContent = 'Please add your name, phone number and at least one product.';
+        err.classList.remove('hidden'); return null;
+      }
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        err.textContent = "That email address doesn't look right. Please check it or leave it empty.";
+        err.classList.remove('hidden'); return null;
+      }
+      err.classList.add('hidden');
+      var when = v('when');
+      if (when === 'Other date') when = 'Other date: ' + (v('whenOther') || 'to confirm');
+      return { name: v('name'), phone: v('phone'), email: email, products: chosen.join(', '), sizes: v('sizes'),
+               delivery: v('delivery'), when: when, notes: v('notes') };
+    }
+
+    // Button 1: prefilled WhatsApp message
+    quoteForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var d = collect(); if (!d) return;
+      var lines = ['Hi Formex Steel, I would like a quote.', '', 'Name: ' + d.name, 'Phone: ' + d.phone];
+      if (d.email) lines.push('Email: ' + d.email);
+      lines.push('Products: ' + d.products,
+                 'Sizes and quantities: ' + (d.sizes || 'to confirm'),
+                 'Delivery: ' + (d.delivery || 'not stated'),
+                 'Needed: ' + (d.when || 'not stated'),
+                 'Notes: ' + (d.notes || '-'));
+      window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+    });
+
+    // Button 2: send the same request by email through Formspree
+    var emailBtn = document.getElementById('email-send');
+    var emailLabel = document.getElementById('email-send-label');
+    var statusBox = document.getElementById('form-status');
+    function showStatus(ok, text) {
+      statusBox.className = 'mt-3 text-sm rounded-lg px-4 py-3 border ' +
+        (ok ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-red-50 text-red-700 border-red-200');
+      statusBox.textContent = text;
+    }
+    emailBtn.addEventListener('click', function () {
+      var d = collect(); if (!d) return;
+      if (FORMSPREE_URL.indexOf('YOUR_FORM_ID') !== -1) {
+        console.warn('Formspree is not set up yet: paste your form address into FORMSPREE_URL.');
+        showStatus(false, "Email sending isn't switched on yet. Please use WhatsApp or call us.");
+        return;
+      }
+      var fd = new FormData();
+      fd.append('_subject', 'New quote request from the Formex Steel website');
+      fd.append('name', d.name);
+      fd.append('phone', d.phone);
+      if (d.email) fd.append('email', d.email);
+      fd.append('products', d.products);
+      fd.append('sizes_and_quantities', d.sizes || 'to confirm');
+      fd.append('delivery', d.delivery || 'not stated');
+      fd.append('needed', d.when || 'not stated');
+      fd.append('notes', d.notes || '-');
+      fd.append('_gotcha', quoteForm.elements['_gotcha'].value);
+      emailBtn.disabled = true; emailLabel.textContent = 'Sending…';
+      fetch(FORMSPREE_URL, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } })
+        .then(function (res) {
+          if (res.ok) {
+            showStatus(true, 'Thank you. Your request was sent. We will reply on the phone number or email you gave.');
+            quoteForm.reset();
+            document.querySelectorAll('#quote-form input[type="radio"], #quote-form input[type="checkbox"]').forEach(function (el) {
+              el.dispatchEvent(new Event('change'));
+            });
+            return;
+          }
+          return res.json().then(function (data) {
+            var msg = data && data.errors ? data.errors.map(function (x) { return x.message; }).join(', ') : '';
+            showStatus(false, 'Sorry, that did not send' + (msg ? ' (' + msg + ')' : '') + '. Please try again or use WhatsApp.');
+          }, function () {
+            showStatus(false, 'Sorry, that did not send. Please try again or use WhatsApp.');
+          });
+        })
+        .catch(function () {
+          showStatus(false, 'Could not connect. Check your internet and try again, or use WhatsApp.');
+        })
+        .then(function () { emailBtn.disabled = false; emailLabel.textContent = 'Send by email'; });
+    });
+
+    // Phones: "Open until 17:00" / "Closed · opens 08:00" line in the header, worked out from Lusaka time
+    (function () {
+      var box = document.getElementById('open-status');
+      if (!box) return;
+      try {
+        var parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Africa/Lusaka', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+        var get = function (t) { return parts.filter(function (p) { return p.type === t; })[0].value; };
+        var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday'));
+        var mins = parseInt(get('hour'), 10) * 60 + parseInt(get('minute'), 10);
+        if (day < 0) return;
+        var hours = [null, [8, 17], [8, 17], [8, 17], [8, 17], [8, 17], [8, 14]]; // Sun closed; Mon-Fri 08-17; Sat 08-14
+        var names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+        var today = hours[day], text, open = false;
+        if (today && mins >= today[0] * 60 && mins < today[1] * 60) {
+          open = true; text = 'Open until ' + pad(today[1]) + ':00';
+        } else if (today && mins < today[0] * 60) {
+          text = 'Closed · opens ' + pad(today[0]) + ':00';
+        } else {
+          var next = (day + 1) % 7;
+          while (!hours[next]) next = (next + 1) % 7;
+          text = 'Closed · opens ' + (next === (day + 1) % 7 ? 'tomorrow' : names[next]) + ' ' + pad(hours[next][0]) + ':00';
+        }
+        document.getElementById('open-text').textContent = text;
+        document.getElementById('open-dot').className = 'w-1.5 h-1.5 rounded-full ' + (open ? 'bg-emerald-500' : 'bg-amber-500');
+        box.classList.remove('hidden'); box.classList.add('flex');
+      } catch (e) { /* leave the line hidden if the browser can't work out the time */ }
+    })();
+
+    // Lightweight click tracking: sends events to GA4 if you add it above
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest('[data-track]');
+      if (el && typeof gtag === 'function') {
+        gtag('event', 'inquiry_click', { event_label: el.getAttribute('data-track') });
+      }
+    });
+  </script>
+</body>
+</html>
